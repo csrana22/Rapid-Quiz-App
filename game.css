@@ -1,0 +1,105 @@
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+}
+#game{
+    padding: 2rem;
+    color: rgb(8, 88, 119);
+    justify-content: center;
+}
+.choices{
+    position: absolute;
+    left: 50rem;
+}
+.choice{
+    width: 100%;
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
+    transition: width 0.2s, height 0.4s;
+}
+.choice:hover{
+    cursor: pointer;
+    transform: translateY(-0.2rem);
+    box-shadow: 3px 5px 10px rgb(5, 108, 148);
+    border: 0.01rem solid rgb(103, 192, 228);
+}
+.choice-prefix{
+background-color: snow;
+padding: 1.2rem 2.1rem;
+border-radius: 5%;
+text-align: center;
+}
+.choice-text{
+padding: 1.2rem 1rem;
+color: rgb(6, 3, 53);
+width: 100%;
+}
+.correct{
+   background-color: rgb(36, 209, 79);
+
+}
+.incorrect{
+    background-color: rgb(202, 48, 21);
+}
+.head{
+    display: flex;
+    background-color: rgb(8, 88, 119);
+    width: 45vw;
+    height: 4.5rem;
+    position: relative;
+    bottom: 11rem;
+    border-radius: 25px;
+    color:white;
+}
+.head-left{
+    margin-top: 4px;
+    margin-left: 1.1rem;
+    font-size: 23px;
+    text-align: center;
+}
+.head-right{
+    text-align: center;
+    position: relative;
+    left: 32.5rem;
+    font-size: 23px;
+    margin-top: 4px;
+    
+}
+#progressBar{
+    background-color: white;
+    width: 5rem;
+    height: 1.5rem;
+    margin-top: 0.3rem;
+    border-radius: 1px;
+}
+#fullBar{
+height: 1.5rem;
+background-color:rgb(56, 185, 236);
+width: 0%
+}
+#loader{
+    border: 1rem solid rgb(175, 172, 172);
+    border-radius: 50%;
+    border-top: 1rem solid  rgb(8, 88, 119);
+    width: 10rem;
+    height: 10rem;
+    animation: spin 2s linear infinite;
+    position: relative;
+    left: 0.5rem;
+    top: 1rem;
+    
+
+}
+@keyframes spin{
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.hidden{
+    display: none;
+}
